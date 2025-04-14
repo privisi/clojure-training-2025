@@ -126,7 +126,7 @@ These will be added in over time as lessons are completed.
 Assignment answers should be committed in src/assignments/YOUR_NAME/assignmentXX.clj in your forked branch
 Pull this branch separately, and merge it into your source branch, commit, and raise a pull request to the main branch.
 
-## License
+** License
 
 Copyright © 2025 Benson Zhang
 
