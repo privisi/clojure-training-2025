@@ -34,7 +34,7 @@ actually use Lisp itself a lot.”
  developing clojure and clojurescript software), you will need a clojure development
  environment.
 
- **EDIT BY BENSON - Just use VSCODE but you can check out the others if you want**
+ *EDIT BY BENSON - Just use VSCODE but you can check out the others if you want*
 
  Some programmers are fastidious about their choices of tooling (I am), others
  tend to be agnostic.  I prefer to let each one of you make their choice in this
