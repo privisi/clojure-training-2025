@@ -1,44 +1,127 @@
-# clojure-training-2025
+* clojure-training-2025
 
-FIXME: description
+A set of training materials adapted from Alain Picards clojure training resources prepared by Benson Zhang for use in training new clojure engineers.
 
-## Installation
+* How to use this repo
 
-Download from http://example.com/FIXME.
+*PREPARING*
 
-## Usage
+Before each lesson, you /must/ come prepared by having
+completed the necessary reading in each of the lesson plans (located in docs).
+Make sure you keep an eye on this repo for new lesson plans,
+and I will post on discord each time a new one is added.
 
-FIXME: explanation
+*DURING THE LESSONS*
 
-    $ java -jar clojure-training-2025-0.1.0-standalone.jar [args]
+This repo will periodically be updated with the code developed in
+each lesson (when applicable) so you can download and play with the
+examples I provide during the lessons.
+After each lesson, the code will be added in a
+file (or subdirectory) named =lesson-01=, =lesson-02= /etc./ (in the src subdir).
 
-## Options
+*AFTER THE LESSONS*
 
-FIXME: listing of options this app accepts.
+You will have to *fork* this repo so you can submit your *assignment solutions*
+for review.
 
-## Examples
+At the end of the lesson, I will sometimes set assignments
+which I will detail in the assignments section.  You should
+attempt to answer these, placing your answers in the file
+=/src/assignments/your_name//lesson_XX_answers.clj=.  When you
+can cleanly load your file into a repl, raise a *pull request* for
+me to review your code and merge it back into the main repo.  Thus,
+you'll be able to view your colleague's solutions after I merge your
+answers back into the main repo.
 
-...
+*REVIEWING SOLUTIONS*
 
-### Bugs
+After the lessons, I will place my solutions in [[file:src/assignments/benson/][this directory]]. You
+can peruse them at your leisure and compare against the code
+you have written.
 
-...
+I will also place the code I present during the live coding
+sessions [[file:src/clojure_training_2025/][in here]]; the files beginning with live_XXX are the code
+you see on the screen during the presentation; the files without the
+live_ prefix are the preparatory material I produce (which is close,
+but doesn't include the tangents I go off on during the lessons as
+questions arise, /etc./)
 
-### Any Other Sections
-### That You Think
-### Might be Useful
+* Material we plan to get through, eventually
 
-## License
+ - [ ] how to get help
+ - [ ] navigate sources
+ - [ ] structural editing
+ - [ ] using maps
+ - [ ] gotchas with =conj=
+ - [ ] destructuring
+ - [ ] sequences, lazy seqs
+ - [ ] lexical vs dynamic scoping
+ - [ ] reduce, functional idioms
+ - [ ] tracing, debugging
+ - [ ] writing tests
+ - [ ] Introduction to =leiningen=, dependency management,
+       and finding and using libraries in clojure.
+ - [ ] The philosophical underpinning of state handling in clojure
+ - [ ] vars, atoms, refs, agents
+ - [ ] threads, futures, promises (concurrency primitives)
+ - [ ] The reader, it's syntax, and brief macro overview
+ - [ ] java interop, definining new types
+ - [ ] namespaces, the ns macro
+ - [ ] i/o
+ - [ ] writing (good!) docstrings
+ - [ ] metadata
+ - [ ] strings; regexes
+ - [ ] throw/catch, slingshot
+ - [ ] making simple HTTP requests
+ - [ ] multimethods
+ - [ ] finding and using libraries
+ - [ ] supply a list of recommended good libs.
+ - [ ] reader syntax
+ - [ ] Simple HTTP service: ring handlers, libraries
+ - [ ] Sending HTTP requests
+ - [ ] core.async
+ - [ ] clojurescript
+ - [ ] reframe
+ - [ ] macros, threading macros
 
-Copyright © 2025 FIXME
+ * Resources
 
-This program and the accompanying materials are made available under the
-terms of the Eclipse Public License 2.0 which is available at
-http://www.eclipse.org/legal/epl-2.0.
+We are going to make extensive use of the following:
 
-This Source Code may also be made available under the following Secondary
-Licenses when the conditions for such availability set forth in the Eclipse
-Public License, v. 2.0 are satisfied: GNU General Public License as published by
-the Free Software Foundation, either version 2 of the License, or (at your
-option) any later version, with the GNU Classpath Exception which is available
-at https://www.gnu.org/software/classpath/license.html.
+ - The excellent online book: [[https://www.braveclojure.com/clojure-for-the-brave-and-true/][Clojure for the Brave and True]]
+ - The [[https://github.com/functional-koans/clojure-koans][clojure koans]]
+ - Many of the excellent at [[https://4clojure.oxal.org/][4clojure sample problems]]
+ - In lessons 7 and 8, we will make use of TODO.
+ - In lessons 9 and 10, we will study a bit of [[https://github.com/reagent-project/reagent][reagent]].
+ - In lessons 11 and 12, we will build our own version of the [[https://www.nytimes.com/puzzles/spelling-bee][New York Times Spelling Bee]].
+
+ ** Recommended external links
+
+   I urge you all to have a look at:
+   - [[https://github.com/razum2um/awesome-clojure][Awesome clojure]]: a curated list
+   - [[https://github.com/clojure-cookbook/clojure-cookbook.git][The clojure cookbook]]
+   - [[https://figwheel.org/docs/][The *figwheel* documentation]] (TODO: Change this to shadow-cljs we will probably not use figweel anymore)
+   - [[https://cljdoc.org/d/reagent/reagent/1.0.0-alpha2/doc/documentation-index][The *reagent* documentation]]
+   - [[https://github.com/day8/re-frame/][The *re-frame* documentation]]
+
+* Lesson Plans
+
+Newer lesson plans will be added in as lessons are completed.
+  - [[file:doc/lesson-01.org::*Introductory%20email][Lesson 1]] :: intro
+  - Lesson 2 :: Functional Programming
+  - Lesson 3 :: More functional programming
+  - Lesson 4 :: References and identities, threads
+  - Lesson 5 :: Java interop, namespaces, i/o
+  - Lesson 6 :: Clojure odds and ends
+  - Lesson 7 :: Building a simple HTTP service - Guess the right number!
+  - Lesson 8 :: core.async and Postgresql
+  - Lesson 9 :: Clojurescript
+  - Lesson 10 :: Re-Frame
+  - Lesson 11 :: The word puzzle (part 1)
+  - Lesson 12 :: The word puzzle (part 2)
+  - Course summary :: A quick review
+
+* Assignments
+These will be added in over time as lessons are completed.
+Assignment answers should be committed in src/assignments/YOUR_NAME/assignmentXX.clj in your forked branch
+Pull this branch separately, and merge it into your source branch, commit, and raise a pull request to the main branch.
