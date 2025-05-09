@@ -1,6 +1,6 @@
 * clojure-training-2025
 
-A set of training materials adapted from Alain Picards clojure training resources prepared by Benson Zhang for use in training new clojure engineers.
+A set of training materials adapted from Alain Picard's clojure training resources prepared by Benson Zhang for use in training new clojure engineers.
 
 * How to use this repo
 
@@ -91,8 +91,8 @@ We are going to make extensive use of the following:
  - The excellent online book: [[https://www.braveclojure.com/clojure-for-the-brave-and-true/][Clojure for the Brave and True]]
  - The [[https://github.com/functional-koans/clojure-koans][clojure koans]]
  - Many of the excellent at [[https://4clojure.oxal.org/][4clojure sample problems]]
- - In lessons 7 and 8, we will make use of TODO.
- - In lessons 9 and 10, we will study a bit of [[https://github.com/reagent-project/reagent][reagent]].
+ - In lessons 7 and 8, we will make use of this simple server playground (TODO).
+ - In lessons 9 and 10, we will study a bit of reagent (TODO)
  - In lessons 11 and 12, we will build our own version of the [[https://www.nytimes.com/puzzles/spelling-bee][New York Times Spelling Bee]].
 
  ** Recommended external links
@@ -125,3 +125,18 @@ Newer lesson plans will be added in as lessons are completed.
 These will be added in over time as lessons are completed.
 Assignment answers should be committed in src/assignments/YOUR_NAME/assignmentXX.clj in your forked branch
 Pull this branch separately, and merge it into your source branch, commit, and raise a pull request to the main branch.
+
+** License
+
+Copyright © 2025 Benson Zhang
+
+This program and the accompanying materials are made available under the
+terms of the Eclipse Public License 2.0 which is available at
+http://www.eclipse.org/legal/epl-2.0.
+
+This Source Code may also be made available under the following Secondary
+Licenses when the conditions for such availability set forth in the Eclipse
+Public License, v. 2.0 are satisfied: GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License, or (at your
+option) any later version, with the GNU Classpath Exception which is available
+at https://www.gnu.org/software/classpath/license.html.
