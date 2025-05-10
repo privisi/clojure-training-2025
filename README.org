@@ -51,11 +51,11 @@ questions arise, /etc./)
  - [ ] how to get help
  - [ ] navigate sources
  - [ ] structural editing
- - [ ] using maps
+ - [X] using maps
  - [ ] gotchas with =conj=
  - [ ] destructuring
  - [ ] sequences, lazy seqs
- - [ ] lexical vs dynamic scoping
+ - [X] lexical vs dynamic scoping
  - [ ] reduce, functional idioms
  - [ ] tracing, debugging
  - [ ] writing tests
@@ -108,7 +108,7 @@ We are going to make extensive use of the following:
 
 Newer lesson plans will be added in as lessons are completed.
   - [[file:doc/lesson-01.org::*Introductory%20email][Lesson 1]] :: intro
-  - Lesson 2 :: Functional Programming
+  - [[file:doc/lesson-02.org::*Lesson%20Goals][Lesson 2]] :: Functional Programming
   - Lesson 3 :: More functional programming
   - Lesson 4 :: References and identities, threads
   - Lesson 5 :: Java interop, namespaces, i/o
@@ -125,6 +125,24 @@ Newer lesson plans will be added in as lessons are completed.
 These will be added in over time as lessons are completed.
 Assignment answers should be committed in src/assignments/YOUR_NAME/assignmentXX.clj in your forked branch
 Pull this branch separately, and merge it into your source branch, commit, and raise a pull request to the main branch.
+
+** Lesson 1
+These are the assignment problems following Lesson 1.
+We will discuss your solutions and see my solutions
+at the beginning of [[file:doc/lesson-02.org::*Lesson%20Goals][Lesson 2]].
+
+NOTE: To solve the problems on 4clojure, simply copy the code and paste it into 4clojure and click run to test your solution.
+
+1. Explain the differences between list and vector, show examples and usages
+2. Problem https://4clojure.oxal.org/#/problem/20
+3. Problem https://4clojure.oxal.org/#/problem/24 
+4. Problem https://4clojure.oxal.org/#/problem/38 (No using max)
+5. Create a function that returns a histogram of the amount of letters in a string.
+   e.g. "Hello" returns some data structure that indicates there is 1 'H', 1 'e', 2 'l', 1 'o'
+
+Bonus
+For those feeling brave, try to write a function which solves this problem:
+https://4clojure.oxal.org/#/problem/77 I will provide my solution to compare with you at the next lecture.
 
 ** License
 
