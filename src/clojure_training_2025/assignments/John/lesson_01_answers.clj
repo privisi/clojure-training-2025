@@ -82,7 +82,26 @@
 ;; Create a function that returns a histogram of the amount of letters in a string. e.g. 
 ;; “Hello” returns some data structure that indicates there is 1 ‘H’, 1 ‘e’, 2 ‘l’, 1 ‘o’
 
-( (fn [thewordimcounting]
-    (frequencies thewordimcounting)) "Hello")
+((fn [thewordimcounting]
+   (reduce (fn [mapofword letter]
+             (assoc mapofword letter
+                    (+ 1 (get mapofword letter 0))))
+           {} thewordimcounting))
+ "Hello")
 
-; the function counts the frequencies of the number of letters, I think it's pretty simple
+; ok fine, without frequencies
+; concept: apply reduce to an anon func to thewordimcounting, which is "Hello"
+; we're gonna use {} for mapofword and letter for "Hello"
+; but since "Hello is a string" break it down as just {} for mapofword and H for letter
+; assoc definition: (assoc map key value)
+; ; assoc {} (map) to H (key) and value which is +1 to whatever we get which is H from {\H}
+; get usage: (get map key defaultvalue)
+; so in this case, the first iteration will return 0 because it's doing (get {} \H 0)
+; and \H isn't inside the map yet, so it will return 0
+; since it returned 0, we +1 to that = 1
+; in the next iteration, it will go to \e and do the same thing, since e isn't the map yet, it'll return 1
+; however in the case of \l, there's 2 l's, so when it reaches that part, it'll be something like
+; get the value of l from the current map which is at {\H \e \l} and since we have an l already inside
+; it returns 1, and we +1 to that so the count now becomes 2
+; it does this till it reaches the end and we're left with the completed map
+; which is {\H 1, \e 1, \l 2, \o 1}
