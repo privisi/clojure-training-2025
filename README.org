@@ -139,6 +139,7 @@ NOTE: To solve the problems on 4clojure, simply copy the code and paste it into 
 4. Problem https://4clojure.oxal.org/#/problem/38 (No using max)
 5. Create a function that returns a histogram of the amount of letters in a string.
    e.g. "Hello" returns some data structure that indicates there is 1 'H', 1 'e', 2 'l', 1 'o'
+   Do it without using (frequencies...)
 
 Bonus
 For those feeling brave, try to write a function which solves this problem:
