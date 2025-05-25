@@ -48,15 +48,15 @@ questions arise, /etc./)
 
 * Material we plan to get through, eventually
 
- - [ ] how to get help
- - [ ] navigate sources
- - [ ] structural editing
+ - [X] how to get help
+ - [X] navigate sources
+ - [X] structural editing
  - [X] using maps
- - [ ] gotchas with =conj=
- - [ ] destructuring
- - [ ] sequences, lazy seqs
+ - [X] gotchas with =conj=
+ - [X] destructuring
+ - [X] sequences, lazy seqs
  - [X] lexical vs dynamic scoping
- - [ ] reduce, functional idioms
+ - [X] reduce, functional idioms
  - [ ] tracing, debugging
  - [ ] writing tests
  - [ ] Introduction to =leiningen=, dependency management,
@@ -144,6 +144,18 @@ NOTE: To solve the problems on 4clojure, simply copy the code and paste it into 
 Bonus
 For those feeling brave, try to write a function which solves this problem:
 https://4clojure.oxal.org/#/problem/77 I will provide my solution to compare with you at the next lecture.
+
+** Lesson 2
+   These are the assignment problems following Lesson 2.
+   We will discuss your solutions and see my solutions
+   at the beginning of [[file:doc/lesson-03.org::*Lesson%20Goals][Lesson 3]].
+
+   1. Implement your own version of =filter= using a loop form, then using reduce.
+   2. Implement your own version of =update-in=
+   3. Write a function which solves this problem:
+      https://4clojure.oxal.org/#/problem/77
+   4. Write a function which solves this problem:
+      https://4clojure.oxal.org/#/problem/53
 
 ** License
 
