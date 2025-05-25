@@ -1,0 +1,2 @@
+This line goes to log.txt.
+So does this one.
